@@ -1,0 +1,203 @@
+#include "schedule.h"
+#include <stdlib.h>
+#include <stdio.h>
+
+struct node {
+  int pid;
+  struct node* next;
+  struct node* prev;
+	int quanta;
+  int age;
+};
+
+struct node* cur;
+struct node* array[3];
+int queue;
+
+/**
+ * Function to initialize any global variables for the scheduler.
+ */
+void init(){
+	queue = 1;
+  array[0] = array[1] = array[2] = cur = NULL;
+}
+
+/**
+ * Function called every simulated time period to provide a mechanism
+ * to age the scheduled processes and trigger feedback if needed.
+ */
+void age(){
+  int i;
+  int removed = 0;
+  for (i = 1; i <= 2; i++) {
+    do {
+      if(array[i]) {
+        cur = array[i];
+        cur->age++;
+        if (cur->age >= 1000) {
+          int pid = cur->pid;
+          if (i == 1) {
+            removeProcess(pid);
+            addProcess(pid, 0);
+          } else {
+            removeProcess(pid);
+            addProcess(pid, 1);
+          }
+          removed = 1;
+        } else {
+          removed = 0;
+        }
+      } else {
+        removed = 0;
+      }
+    } while (removed);
+    if(array[i]) {
+      cur = array[i]->next;
+      while (cur != array[i]) {
+        cur->age++;
+        if (cur->age >= 1000) {
+          int pid = cur->pid;
+          cur = cur->next;
+          if (i == 1) {
+            removeProcess(pid);
+            addProcess(pid, 0);
+            cur = array[i]->next;
+          } else {
+            removeProcess(pid);
+            addProcess(pid, 1);
+            cur=array[i]->next;
+          }
+          if(!array[i]) {
+            cur = NULL;
+          }
+        } else {
+          cur = cur->next;
+        }
+      }
+    }
+  }
+}
+
+/**
+ * Function to add a process to the scheduler
+ * @Param pid - the ID for the process/thread to be added to the
+ *      scheduler queue
+ * @Param priority - priority of the process being added
+ * @return true/false response for if the addition was successful
+ */
+int addProcess(int pid, int priority){
+  if (!array[priority]) {
+    array[priority] = (struct node*) malloc( sizeof(struct node));
+    array[priority]->pid = pid;
+    int quanta;
+    if (priority == 1) {
+      quanta = 4;
+    } else {
+      quanta = 1;
+    }
+    array[priority]->quanta = quanta;
+    array[priority]->age = 0;
+    array[priority]->next = array[priority];
+    array[priority]->prev = array[priority];
+  } else {
+    cur = (struct node*) malloc(sizeof(struct node));
+    cur->pid = pid;
+    int quanta;
+    if (priority == 1) {
+      quanta = 4;
+    } else {
+      quanta = 1;
+    }
+    array[priority]->age = 0;
+    cur->quanta = quanta;
+    array[priority]->prev->next = cur;
+    cur->prev = array[priority]->prev;
+    array[priority]->prev = cur;
+    cur->next = array[priority];
+  }
+  return 0;
+}
+
+/**
+ * Function to remove a process from the scheduler queue
+ * @Param pid - the ID for the process/thread to be removed from the
+ *      scheduler queue
+ * @Return true/false response for if the removal was successful
+ */
+int removeProcess(int pid){
+  int i;
+  for (i = 0; i <= 2; i++) {
+		if (array[i]) {
+			if (array[i]->pid == pid) {
+				if(array[i]->next == array[i]) {
+					free(array[i]);
+					array[i] = NULL;
+					return 1;
+				} else {
+					cur = array[i];
+					array[i]->prev->next = array[i]->next;
+					array[i]->next->prev = array[i]->prev;
+					array[i] = array[i]->next;
+					free(cur);
+					return 1;
+				}
+			}
+			cur = array[i];
+			while (cur->next != array[i] && cur->pid != pid) {
+				cur = cur->next;
+			}
+			if (cur->pid == pid) {
+				cur->prev->next = cur->next;
+				cur->next->prev = cur->prev;
+				free(cur);
+				return 1;
+			}
+		}
+	}
+	return 0;
+}
+/**
+ * Function to get the next process from the scheduler
+ * @Param time - pass by pointer variable to store the quanta of time
+ * 		the scheduled process should run for, returns -1 if should run to completion.
+ * @Return returns the thread id of the next process that should be
+ *      executed, returns -1 if there are no processes
+ */
+int nextProcess(int *time){
+  if (array[0]) {
+    *time = -1;
+    int pid = array[0]->pid;
+    removeProcess(pid);
+    return pid;
+  } else if (array[1]) {
+    *time = 4;
+    int pid = array[1]->pid;
+    array[1]->age = 0;
+    array[1] = array[1]->next;
+    return pid;
+  } else if (array[2]){
+    *time = 1;
+    int pid = array[2]->pid;
+    array[2]->age = 0;
+    array[2] = array[2]->next;
+    return pid;
+  }
+  return -1;
+}
+
+/**
+ * Function that returns a boolean 1 True/0 False based on if there are any
+ * processes still scheduled
+ * @Return 1 if there are processes still scheduled 0 if there are no more
+ *		scheduled processes
+ */
+int hasProcess(){
+  int value = 0;
+  int i;
+  for (i = 0; i < 3; i++) {
+    if(array[i]) {
+      value = 1;
+    }
+  }
+  return value;
+}

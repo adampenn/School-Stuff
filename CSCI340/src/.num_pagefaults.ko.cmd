@@ -1,0 +1,1 @@
+cmd_/home/adampenn/CSCI340-Adam-Penn/src/num_pagefaults.ko := ld -r -m elf_x86_64 -T ./scripts/module-common.lds --build-id  -o /home/adampenn/CSCI340-Adam-Penn/src/num_pagefaults.ko /home/adampenn/CSCI340-Adam-Penn/src/num_pagefaults.o /home/adampenn/CSCI340-Adam-Penn/src/num_pagefaults.mod.o
