@@ -1,0 +1,5 @@
+$
+a
+/etc/walker
+.
+wq

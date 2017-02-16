@@ -1,0 +1,153 @@
+Cleaner/Detergent	Air freshener	$10.60
+Soap/Sundry	Antiperspirant / Deodorant	$03.80
+Produce	Apples	$10.80
+Produce	Asparagus	$01.05
+Produce	Avocados	$08.25
+Condiments	BBQ sauce	$08.55
+Baby/Pet	Baby food	$08.60
+Baby/Pet	Baby wash	$05.40
+Bread	Bagels / Croissants	$10.35
+Baking	Baking powder / Soda	$07.85
+Produce	Bananas	$02.90
+Spices	Basil	$01.70
+Soap/Sundry	Bath soap / Hand soap	$06.75
+Cleaner/Detergent	Bathroom cleaner	$04.55
+Alcohol	Beer	$08.80
+Produce	Berries	$09.10
+Spices	Black pepper	$10.00
+Cleaner/Detergent	Bleach / Detergent	$04.75
+Baking	Bread crumbs	$06.20
+Produce	Broccoli	$05.80
+Bread	Buns / Rolls	$10.65
+Dairy	Butter / Margarine	$08.25
+Baking	Cake / Brownie mix	$10.30
+Bread	Cake / Cookies	$05.25
+Baking	Cake icing / Decorations	$04.80
+Chips/Crackers	Candy / Gum	$05.05
+Canned goods	Canned Applesauce	$09.10
+Canned goods	Canned Baked beans	$03.10
+Canned goods	Canned Broth	$04.95
+Canned goods	Canned Fruit	$01.55
+Canned goods	Canned Olives	$08.75
+Canned goods	Canned Soup / Chili	$01.95
+Canned goods	Canned Tinned meats	$06.80
+Canned goods	Canned Tomatoes	$07.60
+Canned goods	Canned Tuna / Chicken	$05.50
+Canned goods	Canned Veggies	$06.30
+Produce	Carrots	$07.40
+Baby/Pet	Cat food / Treats	$10.70
+Baby/Pet	Cat litter	$04.80
+Produce	Cauliflower	$03.25
+Produce	Celery	$07.25
+Alcohol	Champagne	$02.30
+Produce	Cherries	$03.30
+Baking	Chocolate chips / Cocoa	$01.55
+Spices	Cilantro	$04.65
+Spices	Cinnamon	$03.00
+Alcohol	Club soda / Tonic	$09.70
+Chips/Crackers	Cookies	$09.80
+Produce	Corn	$09.20
+Soap/Sundry	Cosmetics	$01.50
+Dairy	Cottage cheese	$08.15
+Soap/Sundry	Cotton swabs / Balls	$10.90
+Chips/Crackers	Crackers	$07.30
+Produce	Cucumbers	$06.55
+Baby/Pet	Diapers	$09.30
+Cleaner/Detergent	Dish / Dishwasher soap	$06.90
+Baby/Pet	Dog food / Treats	$08.20
+Bread	Donuts / Pastries	$03.15
+Chips/Crackers	Dried fruit	$04.55
+Soap/Sundry	Facial cleanser	$07.00
+Soap/Sundry	Facial tissue	$01.00
+Soap/Sundry	Feminine products	$06.30
+Baby/Pet	Flea treatment	$01.10
+Soap/Sundry	Floss	$02.65
+Baking	Flour	$06.15
+Baby/Pet	Formula	$09.30
+Bread	Fresh bread	$09.40
+Cleaner/Detergent	Garbage bags	$08.35
+Spices	Garlic	$08.75
+Alcohol	Gin	$06.85
+Spices	Ginger	$08.95
+Cleaner/Detergent	Glass cleaner	$03.85
+Chips/Crackers	Granola bars / Mix	$02.35
+Produce	Grapefruit	$07.95
+Produce	Grapes	$03.30
+Condiments	Gravy	$10.25
+Soap/Sundry	Hair gel / Spray	$10.25
+Dairy	Half & half	$03.10
+Condiments	Honey	$09.65
+Condiments	Hot sauce	$05.30
+Condiments	Jam / Jelly / Preserves	$06.55
+Alcohol	Juice	$02.85
+Condiments	Ketchup / Mustard	$01.05
+Produce	Kiwis	$01.60
+Produce	Lemons / Limes	$10.55
+Produce	Lettuce / Greens	$02.95
+Soap/Sundry	Lip balm	$03.85
+Baby/Pet	Lotion	$09.55
+Condiments	Mayonnaise	$09.10
+Produce	Melon	$03.60
+Dairy	Milk	$02.85
+Spices	Mint	$10.90
+Alcohol	Mixers	$10.50
+Soap/Sundry	Moisturizing lotion	$09.95
+Cleaner/Detergent	Mop head / Vacuum bags	$01.15
+Soap/Sundry	Mouthwash	$09.40
+Produce	Mushrooms	$06.40
+Produce	Nectarines	$08.55
+Chips/Crackers	Nuts / Seeds	$10.70
+Chips/Crackers	Oatmeal	$02.90
+Produce	Onions	$07.20
+Produce	Oranges	$01.80
+Spices	Oregano	$09.05
+Spices	Paprika	$10.10
+Spices	Parsley	$05.15
+Condiments	Pasta sauce	$02.40
+Produce	Peaches	$08.65
+Produce	Pears	$10.95
+Produce	Peppers	$03.50
+Baby/Pet	Pet shampoo	$07.45
+Bread	Pie! Pie! Pie!	$02.65
+Bread	Pita bread	$01.55
+Produce	Plums	$02.25
+Chips/Crackers	Popcorn	$02.20
+Chips/Crackers	Potato / Corn chips	$03.25
+Produce	Potatoes	$10.85
+Chips/Crackers	Pretzels	$05.55
+Soap/Sundry	Razors / Shaving cream	$06.85
+Spices	Red pepper	$08.50
+Alcohol	Red wine / White wine	$02.90
+Condiments	Relish	$01.30
+Alcohol	Rum	$10.10
+Condiments	Salad dressing	$10.85
+Condiments	Salsa	$09.70
+Spices	Salt	$03.10
+Soap/Sundry	Shampoo / Conditioner	$02.15
+Baking	Shortening	$04.25
+Bread	Sliced bread	$07.20
+Alcohol	Soda pop	$07.40
+Dairy	Sour cream	$10.90
+Condiments	Soy sauce	$07.75
+Produce	Spinach	$07.35
+Cleaner/Detergent	Sponges / Scrubbers	$06.60
+Alcohol	Sports drink	$05.25
+Produce	Squash	$04.30
+Condiments	Steak sauce	$05.90
+Baking	Sugar	$01.20
+Baking	Sugar substitute	$07.40
+Soap/Sundry	Sunblock	$02.10
+Condiments	Syrup	$02.30
+Soap/Sundry	Toilet paper	$09.45
+Produce	Tomatoes	$10.15
+Soap/Sundry	Toothpaste	$09.80
+Spices	Vanilla extract	$05.55
+Soap/Sundry	Vitamins / Supplements	$09.95
+Alcohol	Vodka	$03.45
+Dairy	Whipped cream	$08.65
+Alcohol	Whiskey	$06.00
+Baby/Pet	Wipes	$07.15
+Condiments	Worcestershire sauce	$01.75
+Baking	Yeast	$04.45
+Dairy	Yogurt	$04.40
+Produce	Zucchini	$08.70

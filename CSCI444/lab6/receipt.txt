@@ -1,0 +1,172 @@
+Item                          Cost
+====                          ======
+Air freshener                 $10.60
+Antiperspirant / Deodorant    $03.80
+Apples                        $10.80
+Asparagus                     $01.05
+Avocados                      $08.25
+BBQ sauce                     $08.55
+Baby food                     $08.60
+Baby wash                     $05.40
+Bagels / Croissants           $10.35
+Baking powder / Soda          $07.85
+Bananas                       $02.90
+Basil                         $01.70
+Bath soap / Hand soap         $06.75
+Bathroom cleaner              $04.55
+Beer                          $08.80
+Berries                       $09.10
+Black pepper                  $10.00
+Bleach / Detergent            $04.75
+Bread crumbs                  $06.20
+Broccoli                      $05.80
+Buns / Rolls                  $10.65
+Butter / Margarine            $08.25
+Cake / Brownie mix            $10.30
+Cake / Cookies                $05.25
+Cake icing / Decorations      $04.80
+Candy / Gum                   $05.05
+Canned Applesauce             $09.10
+Canned Baked beans            $03.10
+Canned Broth                  $04.95
+Canned Fruit                  $01.55
+Canned Olives                 $08.75
+Canned Soup / Chili           $01.95
+Canned Tinned meats           $06.80
+Canned Tomatoes               $07.60
+Canned Tuna / Chicken         $05.50
+Canned Veggies                $06.30
+Carrots                       $07.40
+Cat food / Treats             $10.70
+Cat litter                    $04.80
+Cauliflower                   $03.25
+Celery                        $07.25
+Champagne                     $02.30
+Cherries                      $03.30
+Chocolate chips / Cocoa       $01.55
+Cilantro                      $04.65
+Cinnamon                      $03.00
+Club soda / Tonic             $09.70
+Cookies                       $09.80
+Corn                          $09.20
+Cosmetics                     $01.50
+Cottage cheese                $08.15
+Cotton swabs / Balls          $10.90
+Crackers                      $07.30
+Cucumbers                     $06.55
+Diapers                       $09.30
+Dish / Dishwasher soap        $06.90
+Dog food / Treats             $08.20
+Donuts / Pastries             $03.15
+Dried fruit                   $04.55
+Facial cleanser               $07.00
+Facial tissue                 $01.00
+Feminine products             $06.30
+Flea treatment                $01.10
+Floss                         $02.65
+Flour                         $06.15
+Formula                       $09.30
+Fresh bread                   $09.40
+Garbage bags                  $08.35
+Garlic                        $08.75
+Gin                           $06.85
+Ginger                        $08.95
+Glass cleaner                 $03.85
+Granola bars / Mix            $02.35
+Grapefruit                    $07.95
+Grapes                        $03.30
+Gravy                         $10.25
+Hair gel / Spray              $10.25
+Half & half                   $03.10
+Honey                         $09.65
+Hot sauce                     $05.30
+Jam / Jelly / Preserves       $06.55
+Juice                         $02.85
+Ketchup / Mustard             $01.05
+Kiwis                         $01.60
+Lemons / Limes                $10.55
+Lettuce / Greens              $02.95
+Lip balm                      $03.85
+Lotion                        $09.55
+Mayonnaise                    $09.10
+Melon                         $03.60
+Milk                          $02.85
+Mint                          $10.90
+Mixers                        $10.50
+Moisturizing lotion           $09.95
+Mop head / Vacuum bags        $01.15
+Mouthwash                     $09.40
+Mushrooms                     $06.40
+Nectarines                    $08.55
+Nuts / Seeds                  $10.70
+Oatmeal                       $02.90
+Onions                        $07.20
+Oranges                       $01.80
+Oregano                       $09.05
+Paprika                       $10.10
+Parsley                       $05.15
+Pasta sauce                   $02.40
+Peaches                       $08.65
+Pears                         $10.95
+Peppers                       $03.50
+Pet shampoo                   $07.45
+Pie! Pie! Pie!                $02.65
+Pita bread                    $01.55
+Plums                         $02.25
+Popcorn                       $02.20
+Potato / Corn chips           $03.25
+Potatoes                      $10.85
+Pretzels                      $05.55
+Razors / Shaving cream        $06.85
+Red pepper                    $08.50
+Red wine / White wine         $02.90
+Relish                        $01.30
+Rum                           $10.10
+Salad dressing                $10.85
+Salsa                         $09.70
+Salt                          $03.10
+Shampoo / Conditioner         $02.15
+Shortening                    $04.25
+Sliced bread                  $07.20
+Soda pop                      $07.40
+Sour cream                    $10.90
+Soy sauce                     $07.75
+Spinach                       $07.35
+Sponges / Scrubbers           $06.60
+Sports drink                  $05.25
+Squash                        $04.30
+Steak sauce                   $05.90
+Sugar                         $01.20
+Sugar substitute              $07.40
+Sunblock                      $02.10
+Syrup                         $02.30
+Toilet paper                  $09.45
+Tomatoes                      $10.15
+Toothpaste                    $09.80
+Vanilla extract               $05.55
+Vitamins / Supplements        $09.95
+Vodka                         $03.45
+Whipped cream                 $08.65
+Whiskey                       $06.00
+Wipes                         $07.15
+Worcestershire sauce          $01.75
+Yeast                         $04.45
+Yogurt                        $04.40
+Zucchini                      $08.70
+
+Subtotal by Category       
+---------------------------
+Chips/Crackers      $ 53.65
+Spices              $ 89.40
+Baby/Pet            $ 81.55
+Condiments          $ 92.40
+Produce             $195.45
+Soap/Sundry         $113.65
+Dairy               $ 46.30
+Baking              $ 54.15
+Canned goods        $ 55.60
+Bread               $ 50.20
+Cleaner/Detergent   $ 46.75
+Alcohol             $ 76.10
+===========================
+Total               $955.20

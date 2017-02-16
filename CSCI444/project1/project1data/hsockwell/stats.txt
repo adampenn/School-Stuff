@@ -1,0 +1,7 @@
+USE THIS FILE FOR STATS(make this value 0 to use):1
+Knight 1 Stamina:20
+Knight 1 Weapon Cost:3
+Knight 1 Weapon Hit Chance:5
+Knight 2 Stamina:20
+Knight 2 Weapon Cost:2
+Knight 2 Weapon Hit Chance:3

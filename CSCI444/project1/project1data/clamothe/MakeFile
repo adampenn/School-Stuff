@@ -1,0 +1,4 @@
+JoustDuel: Joust.cpp Knight.h Knight.cpp Weapon.h Weapon.cpp   
+    g++ Joust.cpp Knight.cpp Weapon.cpp -o JoustDuel
+clean:
+    rm *.o Joust

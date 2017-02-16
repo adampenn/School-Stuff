@@ -5,77 +5,130 @@
  * CSU Chico
  */
 
-#include <cstdlib>
-#include <iostream>
-#include <ctime>
- 
-using "endl";
-using "cout";
-using "cin";
-using "time";
-using "srand";
-using "rand";
-//using "";
-
-<form>
-<flag>
-<n> 
-<A>
-<B>
-
-<flag> is one of R => Random generation of matrices, I => Input matrices
-<n> specifies the size - each matrix is to to be n x n
-<A> is an n x n matrix, input in row major order (only present if flag=I)
-<B> is an n x n matrix, input in row major order (only present if flag=I) 
-
-// Struct for Matric Multiplications
-struct mmConfig
-{
-  char flag;
-  int size;
-  int[][] matrixA, matrixB;
-};
-
-void init(mmConfig &matrix) {
-  //seed random value based off of time
-  srand(time(0));
-
-  cin >> matrix.flag
-  cin >> matrix.size;
-
-  // if random was chosen populate the matrixs
-  if (matrix.flag == 'R') {
-    for (int i = 0; i < matrix.size; i++) {
-      for (int j = 0; j < matrix.size; j++) {
-        matrix.matrixA[i][j] = rand();
-        matrix.matrixB[i][j] = rand();
-      }
-    }
-  } else {
-    for (int i = 0; i < matrix.size; i++) {
-      for (int j = 0; j < matrix.size; j++) {
-        int input;
-        cin >> input;
-        matrix.matrixA[i][j] = ;
-        cin >> input;
-        matrix.matrixB[i][j] = rand();
-      }
-    }
-  }
-}
+#include "stdlib.h"
+#include "stdio.h"
+#include "time.h"
 
 int main()
 {
-  mmConfig matrix;
-  init(matrix);
 
-  for (int i = 0; i < matrix.size; i++) {
-    for (int j = 0; j < matrix.size; j++) {
-      cout << matrix.matrixA[i][j];
-      // cout << matrix.matrixB[i][j];
+  int size, i, j, k, dot;
+	char flag;
+
+  //seed random value based off of time
+  srand(time(0));
+  
+	if(!scanf("%c", &flag)){}
+  if(!scanf("%d", &size)){};
+	int** matrixA = (int**)malloc(size * sizeof(int));
+	int** matrixB = (int**)malloc(size * sizeof(int));
+	int** matrixC = (int**)malloc(size * sizeof(int));
+	for (i  = 0; i < size; i++) {
+    matrixA[i] = (int*)malloc(size * sizeof(int));
+    matrixB[i] = (int*)malloc(size * sizeof(int));
+    matrixC[i] = (int*)malloc(size * sizeof(int));
+	}
+
+  // if random was chosen populate the matrixs randomly
+  if (flag == 'R') {
+    for (i = 0; i < size; i++) {
+      for (j = 0; j <size; j++) {
+        matrixA[i][j] = rand() % 101;
+        matrixB[i][j] = rand() % 101;
+        matrixC[i][j] = rand() % 101;
+      }
     }
-    cout << endl;
+	// else take input for matrixs	
+  } else {
+	  // Input for A
+    for (i = 0; i < size; i++) {
+      for (j = 0; j < size; j++) {
+        int input;
+        if(!scanf("%d", &input)){};
+        matrixA[i][j] = input;
+      }
+    }
+	  // Input for B
+    for (i = 0; i < size; i++) {
+      for (j = 0; j < size; j++) {
+        int input;
+        if(!scanf("%d", &input)){};
+        matrixB[i][j] = input;
+      }
+    }
   }
 
+	// Print out A
+  for (i = 0; i < size; i++) {
+    for (j = 0; j < size; j++) {
+      printf("%d ", matrixA[i][j]);
+    }
+		printf("\n");
+  }
+  printf("\n");
+
+  // Print out B
+  for (i = 0; i < size; i++) {
+    for (j = 0; j < size; j++) {
+      printf("%d ", matrixB[i][j]);
+    }
+		printf("\n");
+  }
+  printf("\n");
+
+
+	// Print out C
+	if (flag /*== 'I'*/) {
+	  for (i = 0; i < size; i++) {
+      for (j = 0; j < size; j++) {
+        printf("%d ", matrixC[i][j]);
+      }
+	  	printf("\n");
+	  }
+  }
+  // Calculate Dot product
+  for (i = 0; i < size; i++) {
+    for (j = 0; j < size; j++) {
+      dot = 0;
+      for (k = 0; k < size; k++) {
+        dot = dot + (matrixA[i][k] * matrixB[k][j]);
+      }
+      matrixC[i][j] = dot;
+    }
+  }
+
+	// Print out A
+	/*
+  for (i = 0; i < size; i++) {
+    for (j = 0; j < size; j++) {
+      printf("%d ", matrixA[i][j]);
+    }
+		printf("\n");
+  }
+  printf("\n");
+	*/
+
+  // Print out B
+	/*
+  for (i = 0; i < size; i++) {
+    for (j = 0; j < size; j++) {
+      printf("%d ", matrixB[i][j]);
+    }
+		printf("\n");
+  }
+  printf("\n");
+	*/
+
+
+	// Print out C
+	if (flag /*== 'I'*/) {
+	  for (i = 0; i < size; i++) {
+      for (j = 0; j < size; j++) {
+        printf("%d ", matrixC[i][j]);
+      }
+	  	printf("\n");
+	  }
+  }
   return 0;
 }
+
